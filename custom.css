@@ -10774,4 +10774,17 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
+.wedding {
+  background-color: #eddcd2;
+}
+.wedding .navbar-light {
+  background-color: transparent !important;
+}
+.wedding .navbar-brand {
+  color: black !important;
+}
+.wedding .navbar-nav .nav-link {
+  color: black !important;
+}
+
 /*# sourceMappingURL=custom.css.map */

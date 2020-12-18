@@ -42,7 +42,6 @@ $font-size-base: 1.2rem;
 }
 
 .works-city {
-    
     height: 50vh;
     @include media-breakpoint-up(md) {
         height: 80vh;
@@ -84,3 +83,16 @@ $font-size-base: 1.2rem;
 }
 
 //Portfolio Page
+.wedding {
+    background-color: #eddcd2;
+.navbar-light {
+    background-color: transparent !important;
+}
+    .navbar-brand {
+        color: black !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: black !important;
+    }
+}
