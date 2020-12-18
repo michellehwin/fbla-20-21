@@ -10701,14 +10701,19 @@ textarea.form-control-lg {
   background-image: url(./home-page.jpg);
   height: 100vh;
   background-size: cover;
-  color: #e0d8c0 !important;
+  color: #eddcd2 !important;
 }
 
 .home-page .name {
   padding-top: 30vh;
-  font-size: 10rem;
+  font-size: 4rem;
 }
 
+@media (min-width: 768px) {
+  .home-page .name {
+    font-size: 10rem;
+  }
+}
 .portfolio {
   background-color: #eddcd2;
 }
@@ -10726,21 +10731,47 @@ textarea.form-control-lg {
 }
 
 .works-city {
-  height: 80vh;
+  height: 50vh;
   background-image: url(./city.jpg);
   background-size: contain;
 }
-
-.description {
-  padding: 15vh;
+@media (min-width: 768px) {
+  .works-city {
+    height: 80vh;
+  }
 }
 
+.description {
+  padding: 7vh;
+}
+@media (min-width: 768px) {
+  .description {
+    padding: 15vh;
+  }
+}
 .description .s {
   font-size: 1.5rem;
 }
-
 .description .l {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .description .l {
+    font-size: 3rem;
+  }
+}
+
+.work a {
+  text-decoration: none;
+}
+.work a:visited {
+  text-decoration: none;
+}
+.work a:hover {
+  text-decoration: underline;
+}
+.work a:active {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=custom.css.map */
