@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./main.css">
-    <title>Kei Nishikori</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./custom.css">
+    <title>Kim Taehyung</title>
 </head>
 
 <body>
-    <div class="container-fluid home-page p-0">
-
-        <nav id="topNav" class="navbar navbar-expand-lg navbar-light transparent bg-light ">
+    <div class="container-fluid home-page">
+        <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,41 +24,83 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
+                        <a class="nav-link" href="#">schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">about</a>
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand mx-auto" href="#">Kei Nishikori</a>
+            <!-- <a class="navbar-brand mx-auto" href="#">Kim Taehyung</a>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
+            </div> -->
         </nav>
-        
+        <div class="name text-center">
+            Kim Taehyung
+        </div>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-md-center">
-            <div class="col col-md-3">
+    <div class="container-fluid p-0 portfolio">
+        <div class="row justify-content-md-center description">
+            <div class="col col-md-3 l">
                 Photographer, Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             </div>
-            <div class="col col-md-5">
+            <div class="col col-md-5 offset-md-1 s">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi autem, accusantium quibusdam alias optio eaque, mollitia porro perferendis itaque aperiam distinctio pariatur aliquam laudantium incidunt esse veritatis! Nobis, quae laboriosam.
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center p-5">
+            <div class="col-md-3 offset-md-2">
+                Spring, Outdoor, blah
+            </div>
+            <div class="col-md-3">
+                11.23.2020
+            </div>
+            <div class="col-md-4 text-end">
+                <h1>Suzuki Wedding</h1>
+            </div>
+        </div>
+        <div class="works-city">
+        </div>
+        <div class="row align-items-center p-5">
+            <div class="col-md-3 offset-md-2">
+                Spring, Outdoor, blah
+            </div>
+            <div class="col-md-3">
+                11.23.2020
+            </div>
+            <div class="col-md-4 text-end">
+                <h1>Suzuki Wedding</h1>
+            </div>
+        </div>
+        <div class="works-city">
+        </div>
+        <div class="row align-items-center p-5">
+            <div class="col-md-3 offset-md-2">
+                Spring, Outdoor, blah
+            </div>
+            <div class="col-md-3">
+                11.23.2020
+            </div>
+            <div class="col-md-4 text-end">
+                <h1>Suzuki Wedding</h1>
+            </div>
+        </div>
+        <div class="works-city">
+        </div>
+        <div class="row justify-content-center p-4">
+            <div class="col text-center">
+                ©2020 Kim Taehyung
             </div>
         </div>
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <script>
+        import bootstrap from 'bootstrap'
+    </script>
 
 </body>
 

@@ -1,0 +1,53 @@
+$font-size-base:1.2rem;
+@import "../bootstrap-5.0.0-beta1/scss/bootstrap";
+
+*{
+    font-family: 'EB Garamond', serif;
+}
+
+.home-page {
+    background-image: url(./home-page.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: #e0d8c0 !important
+}
+
+.home-page .name {
+    padding-top: 30vh;
+    font-size: 10rem;
+}
+
+.portfolio {
+    background-color: #eddcd2;
+}
+
+.navbar-brand {
+    color: #e0d8c0 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #e0d8c0 !important;
+}
+
+.navbar-light {
+    background-color: transparent !important;
+}
+
+.works-city {
+    height: 80vh;
+    background-image: url(./city.jpg);
+    background-size: contain;
+}
+
+.description{
+    padding: 15vh;
+}
+
+.description .s{
+    font-size: 1.5rem;
+}
+
+.description .l {
+    font-size:3rem;
+}
+
