@@ -10715,15 +10715,12 @@ textarea.form-control-lg {
   }
 }
 .portfolio {
-  background-color: #eddcd2;
-}
-
-.navbar-brand {
-  color: #e0d8c0 !important;
+  background-color: #6c584c;
+  color: #eddcd2;
 }
 
 .navbar-nav .nav-link {
-  color: #e0d8c0 !important;
+  color: #eddcd2 !important;
 }
 
 .navbar-light {
@@ -10766,6 +10763,7 @@ textarea.form-control-lg {
 }
 .work a:visited {
   text-decoration: none;
+  color: #eddcd2;
 }
 .work a:hover {
   text-decoration: underline;
@@ -10775,16 +10773,102 @@ textarea.form-control-lg {
 }
 
 .wedding {
-  background-color: #eddcd2;
+  background-color: #271805;
 }
 .wedding .navbar-light {
   background-color: transparent !important;
 }
 .wedding .navbar-brand {
-  color: black !important;
+  color: #eddcd2 !important;
 }
 .wedding .navbar-nav .nav-link {
-  color: black !important;
+  color: #eddcd2 !important;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(200px, 1fr));
+  grid-template-rows: repeat(5, minmax(200px, 1fr));
+}
+.photo-grid div:not(.title) {
+  background-image: url(../polaroid-temp.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.photo-grid .title {
+  color: #eddcd2;
+  grid-area: 1/1/1/3;
+}
+
+.photo1 {
+  grid-area: 1/1/3/4;
+  transform: rotate(-20deg);
+  margin-top: 10%;
+}
+
+.photo2 {
+  grid-area: 4/2/5/5;
+  transform: rotate(20deg);
+}
+
+.photo3 {
+  grid-area: 3/3/5/5;
+}
+
+.photo4 {
+  grid-area: 3/3/5/5;
+}
+
+.photo5 {
+  grid-area: 1/5/3/8;
+  transform: rotate(15deg);
+}
+
+.photo6 {
+  grid-area: 1/3/3/5;
+  transform: rotate(5deg);
+}
+
+.photo7 {
+  grid-area: 2/7/4/9;
+  transform: rotate(5deg);
+}
+
+.photo8 {
+  grid-area: 3/5/5/7;
+  transform: rotate(5deg);
+}
+
+.pricing {
+  background-color: #b2967d;
+}
+.pricing .row {
+  background-color: white;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 10px gray);
+  border: 1px solid white;
+}
+.pricing .row img {
+  width: 80%;
+}
+.pricing .row div:not(.last) {
+  border-right: 1px solid gray;
+}
+
+.about {
+  background-color: #b2967d;
+}
+.about .castle-background {
+  background-image: url(../castle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.about .row.first img {
+  box-shadow: 25px -20px black;
+}
+.about .row.second img {
+  box-shadow: -25px 20px black;
 }
 
 /*# sourceMappingURL=custom.css.map */
