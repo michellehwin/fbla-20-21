@@ -1,5 +1,6 @@
 $font-size-base: 1.2rem;
 $font-color-light: #eddcd2;
+$background-color-dark: #271805;
 @import "../bootstrap-5.0.0-beta1/scss/bootstrap";
 
 * {
@@ -83,7 +84,7 @@ $font-color-light: #eddcd2;
 
 //Portfolio Page
 .wedding {
-    background-color: #271805;
+    background-color: $background-color-dark;
     .navbar-light {
         background-color: transparent !important;
     }
@@ -182,4 +183,9 @@ $font-color-light: #eddcd2;
     .row.second img {
         box-shadow: -25px 20px black;
     }
+}
+
+//Scheduling Page
+.schedule{
+    background-color:$background-color-dark;
 }
