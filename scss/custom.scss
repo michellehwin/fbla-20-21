@@ -146,7 +146,10 @@ $font-color-light: #eddcd2;
 
 //Pricing page
 .pricing {
-    background-color: #b2967d;
+    background-color: #ede0d4;
+    .navbar-nav .nav-link {
+    color: #6c584c !important;
+}
     .row {
         background-color: white;
         border-radius: 15px;
@@ -157,6 +160,9 @@ $font-color-light: #eddcd2;
         }
         div:not(.last) {
             border-right: 1px solid gray;
+        }
+        h1{
+            font-family: 'Viga', sans-serif;
         }
     }
 }

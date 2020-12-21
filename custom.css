@@ -10840,7 +10840,10 @@ textarea.form-control-lg {
 }
 
 .pricing {
-  background-color: #b2967d;
+  background-color: #ede0d4;
+}
+.pricing .navbar-nav .nav-link {
+  color: #6c584c !important;
 }
 .pricing .row {
   background-color: white;
@@ -10853,6 +10856,9 @@ textarea.form-control-lg {
 }
 .pricing .row div:not(.last) {
   border-right: 1px solid gray;
+}
+.pricing .row h1, .pricing .row .h1 {
+  font-family: "Viga", sans-serif;
 }
 
 .about {
