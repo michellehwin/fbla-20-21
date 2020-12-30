@@ -27,7 +27,8 @@ $background-color-dark: #271805;
     }
 }
 
-.portfolio {
+.portfolio,
+.home footer {
     background-color: #6c584c;
     color: $font-color-light;
 }
@@ -40,22 +41,35 @@ $background-color-dark: #271805;
     background-color: transparent !important;
 }
 
-.works-city {
+.p-hero {
     height: 50vh;
     @include media-breakpoint-up(md) {
         height: 80vh;
     }
-    background-image: url(./city.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.architecture {
+    background-image: url("./portfolio pictures/architecture/a1.jpg");
+}
+.city {
+    background-image: url("./portfolio pictures/city/c1.jpg");
+}
+.people {
+    background-image: url("./portfolio pictures/people/p1.jpg");
 }
 
 .description {
     padding: 7vh;
-    @include media-breakpoint-up(md) {
+    @media (min-width: 1441px) {
         padding: 15vh;
     }
     .s {
         font-size: 1.5rem;
+        @media (max-width: 1441px) {
+            padding-top: 10px !important;
+        }
     }
     .l {
         font-size: 2rem;
@@ -68,7 +82,7 @@ $background-color-dark: #271805;
 .work {
     a {
         text-decoration: none;
-
+        color: $font-color-light;
         &:visited {
             text-decoration: none;
             color: $font-color-light;
@@ -82,75 +96,129 @@ $background-color-dark: #271805;
     }
 }
 
+.footer-social-link ul {
+    list-style-type: none;
+}
+.footer-social-link li {
+    display: inline-block;
+}
+.footer-social-link a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 10px;
+    color: #fff;
+}
+.footer-social-link a i.fa-facebook {
+    background-color: #3b5998;
+}
+.footer-social-link a i.fa-twitter {
+    background-color: #55acee;
+}
+.footer-social-link a i.fa-google-plus {
+    background-color: #dd4b39;
+}
+.footer-social-link a i.fa-linkedin {
+    background-color: #0976b4;
+}
+.footer-social-link a i.fa-instagram {
+    background-color: #b7242a;
+}
+
 //Portfolio Page
 .wedding {
     background-color: $background-color-dark;
     .navbar-light {
         background-color: transparent !important;
     }
-    .navbar-brand {
-        color: $font-color-light !important;
-    }
-    .navbar-nav .nav-link {
+    * {
         color: $font-color-light !important;
     }
 }
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(8, minmax(200px, 1fr));
-    grid-template-rows: repeat(5, minmax(200px, 1fr));
-    div:not(.title) {
-        background-image: url(../polaroid-temp.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    div:not(.title) img {
+        object-fit: cover;
+        width: 100%;
     }
     .title {
         color: $font-color-light;
-        grid-area: 1/1/1/3;
     }
 }
 .photo1 {
-    grid-area: 1/1/3/4;
+    grid-column: span 2;
     transform: rotate(-20deg);
     margin-top: 10%;
 }
 .photo2 {
-    grid-area: 4/2/5/5;
     transform: rotate(20deg);
+    @include media-breakpoint-down(sm) {
+        img {
+            margin-top: 20%;
+            padding-bottom: 20%;
+        }
+    }
 }
-.photo3 {
-    grid-area: 3/3/5/5;
-    // transform: rotate(20deg);
+.photo3 img {
+    margin-left: 40%;
 }
 .photo4 {
-    grid-area: 3/3/5/5;
-    // transform: rotate(20deg);
+    grid-column: span 2;
+    transform: rotate(20deg);
+    img {
+        padding-top: 20%;
+    }
+    @media (min-width: 1441px) {
+        img {
+            margin-left: 30%;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        transform: rotate(-18deg);
+    }
 }
 .photo5 {
-    grid-area: 1/5/3/8;
-    transform: rotate(15deg);
+    grid-column: span 2;
+    @media (min-width: 1441px) {
+        transform: rotate(10deg);
+        img {
+            margin-top: 20%;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        grid-column: span 3;
+    }
 }
 
 .photo6 {
-    grid-area: 1/3/3/5;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 }
 .photo7 {
-    grid-area: 2/7/4/9;
+    grid-column: span 2;
     transform: rotate(5deg);
+    margin-top: 20%;
 }
 .photo8 {
-    grid-area: 3/5/5/7;
     transform: rotate(5deg);
+    @include media-breakpoint-up(md) {
+        img {
+            margin: 40% 20%;
+        }
+    }
 }
 
 //Pricing page
 .pricing {
     background-color: #ede0d4;
     .navbar-nav .nav-link {
-    color: #6c584c !important;
-}
+        color: #6c584c !important;
+    }
     .row {
         background-color: white;
         border-radius: 15px;
@@ -159,11 +227,21 @@ $background-color-dark: #271805;
         img {
             width: 80%;
         }
-        div:not(.last) {
-            border-right: 1px solid gray;
+        @include media-breakpoint-up(md) {
+            div:not(.last) {
+                border-right: 1px solid gray;
+            }
         }
-        h1{
-            font-family: 'Viga', sans-serif;
+        h1 {
+            font-family: "Viga", sans-serif;
+        }
+    }
+    footer {
+        div,
+        .row {
+            background-color: #ede0d4;
+            border: none !important;
+            filter: none;
         }
     }
 }
@@ -186,6 +264,6 @@ $background-color-dark: #271805;
 }
 
 //Scheduling Page
-.schedule{
-    background-color:$background-color-dark;
+.schedule {
+    background-color: $background-color-dark;
 }
