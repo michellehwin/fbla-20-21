@@ -11,6 +11,8 @@ $background-color-dark: #271805;
 
 .home-page {
     background-image: url(./home-page.jpg);
+    background-color: rgba(0, 0, 0, 0.3); // Tint color
+  background-blend-mode: multiply;
     height: 100vh;
     background-size: cover;
     color: $font-color-light !important;
@@ -21,9 +23,9 @@ $background-color-dark: #271805;
     font-size: 4rem;
 }
 
-@include media-breakpoint-up(md) {
+@media (min-width: 426px) {
     .home-page .name {
-        font-size: 10rem;
+        font-size: 7rem;
     }
 }
 

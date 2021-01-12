@@ -10699,6 +10699,8 @@ textarea.form-control-lg {
 
 .home-page {
   background-image: url(./home-page.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
   height: 100vh;
   background-size: cover;
   color: #eddcd2 !important;
@@ -10709,9 +10711,9 @@ textarea.form-control-lg {
   font-size: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 426px) {
   .home-page .name {
-    font-size: 10rem;
+    font-size: 7rem;
   }
 }
 .portfolio,
