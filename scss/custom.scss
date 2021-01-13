@@ -12,7 +12,7 @@ $background-color-dark: #271805;
 .home-page {
     background-image: url(./home-page.jpg);
     background-color: rgba(0, 0, 0, 0.3); // Tint color
-  background-blend-mode: multiply;
+    background-blend-mode: multiply;
     height: 100vh;
     background-size: cover;
     color: $font-color-light !important;
@@ -105,6 +105,9 @@ $background-color-dark: #271805;
 .footer-social-link li {
     display: inline-block;
 }
+.footer-social-link a {
+    text-decoration: none;
+}
 .footer-social-link a i {
     display: block;
     width: 40px;
@@ -133,7 +136,7 @@ $background-color-dark: #271805;
 }
 
 //Portfolio Page
-.wedding {
+.portfolio {
     background-color: $background-color-dark;
     .navbar-light {
         background-color: transparent !important;
@@ -146,83 +149,21 @@ $background-color-dark: #271805;
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: minmax(10vh, 50vh);
-    grid-gap: 5rem;
+    grid-gap: 2rem;
     @include media-breakpoint-down(sm) {
         grid-template-columns: 100% !important;
     }
     div:not(.title) img {
-        object-fit: contain;
+        object-fit: cover;
+        min-height: 4em;
         width: 100%;
         height: 100%;
     }
     .title {
         color: $font-color-light;
     }
-}
-.photo1 {
-    grid-column: span 2;
-    transform: rotate(-20deg);
-    margin-top: 10%;
-}
-.photo2 {
-    transform: rotate(15deg);
-    img {
-        margin-top: 40%;
-    }
-    @include media-breakpoint-down(sm) {
-        img {
-            margin-top: 20%;
-            padding-bottom: 20%;
-        }
-    }
-}
-.photo3 img {
-    // margin-left: 40%;
-}
-.photo4 {
-    grid-column: span 2;
-    transform: rotate(10deg);
-    img {
-        // padding-top: 20%;
-    }
-    @media (min-width: 1441px) {
-        img {
-            margin-left: 30%;
-        }
-    }
-    @include media-breakpoint-down(sm) {
-        transform: rotate(-18deg);
-    }
-}
-.photo5 {
-    grid-column: span 2;
-    @media (min-width: 1441px) {
-        // transform: rotate(10deg);
-        img {
-            margin-top: 10%;
-            padding-right: 30%;
-        }
-    }
-    @include media-breakpoint-up(lg) {
-        grid-column: span 3;
-    }
-}
-
-.photo6 {
-    transform: rotate(-5deg);
-}
-.photo7 {
-    grid-column: span 2;
-    transform: rotate(5deg);
-    margin-top: 20%;
-}
-.photo8 {
-    // transform: rotate(-5deg);
-    @include media-breakpoint-up(md) {
-        img {
-            margin: 10% 20%;
-        }
+    .photo1 {
+        grid-area: 1 / 1 / 3 / 3;
     }
 }
 
@@ -236,14 +177,14 @@ $background-color-dark: #271805;
         @include media-breakpoint-up(lg) {
             background-color: white;
             border-radius: 15px;
-            filter: drop-shadow(10px 10px 10px gray);
+            filter: drop-shadow(0 0 10px black);
             border: 1px solid white;
         }
         @media (max-width: 991px) {
             .col-lg-4 {
                 background-color: white;
                 border-radius: 15px;
-                filter: drop-shadow(10px 10px 10px gray);
+                filter: drop-shadow(10px 10px 10px black);
                 border: 1px solid white;
                 padding: 10%;
                 margin-bottom: 15%;
@@ -301,6 +242,13 @@ $background-color-dark: #271805;
     }
     .row.second img {
         box-shadow: -25px 20px black;
+    }
+    a {
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
