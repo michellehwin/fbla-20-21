@@ -10930,7 +10930,7 @@ textarea.form-control-lg {
   background-color: #b2967d;
 }
 .about .castle-background {
-  background-image: url(../castle.png);
+  background-image: url(./castle.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
