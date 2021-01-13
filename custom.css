@@ -10716,8 +10716,7 @@ textarea.form-control-lg {
     font-size: 7rem;
   }
 }
-.portfolio,
-.home footer {
+.portfolio {
   background-color: #6c584c;
   color: #eddcd2;
 }
@@ -10838,13 +10837,13 @@ textarea.form-control-lg {
   background-color: #b7242a;
 }
 
-.portfolio {
+.portfolio, .home footer {
   background-color: #271805;
 }
-.portfolio .navbar-light {
+.portfolio .navbar-light, .home footer .navbar-light {
   background-color: transparent !important;
 }
-.portfolio * {
+.portfolio *, .home footer * {
   color: #eddcd2 !important;
 }
 

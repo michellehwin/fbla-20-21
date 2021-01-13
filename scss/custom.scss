@@ -29,8 +29,7 @@ $background-color-dark: #271805;
     }
 }
 
-.portfolio,
-.home footer {
+.portfolio, {
     background-color: #6c584c;
     color: $font-color-light;
 }
@@ -136,7 +135,7 @@ $background-color-dark: #271805;
 }
 
 //Portfolio Page
-.portfolio {
+.portfolio, .home footer {
     background-color: $background-color-dark;
     .navbar-light {
         background-color: transparent !important;
